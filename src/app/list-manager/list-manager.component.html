@@ -1,0 +1,10 @@
+<div class="todo-app">
+
+
+<app-input (submit)="addItem($event)"></app-input>
+<ul>
+  <li *ngFor="let item of todoList">
+    <app-todo-item [todoItem]="item"></app-todo-item>
+  </li>
+</ul>
+</div>

@@ -1,0 +1,9 @@
+<input class="todo-input"
+        #inputElement
+        placeholder="Add an item"
+      (keyup.enter)="changeTitle(inputElement.value); 
+            inputElement.value=''"
+      >
+<button class="btn" (click)="changeTitle(inputElement.value)">
+  Save
+</button>
